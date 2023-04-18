@@ -14,11 +14,13 @@ bool route_handler_base::match(std::string route) {
   return std::regex_match(route, regex_);
 }
 
-void route_handler_base::handle_request(http_request& req, http_response& res) {
+bool route_handler_base::handle_request(http_request& req, http_response& res) {
   std::string method(req.method_);
   if (method == GetMethod) {
-    return http_get(req, res);
+    http_get(req, res);
+    return true;
   }
+  return false;
 }
 
 route_handler_base::~route_handler_base() {}

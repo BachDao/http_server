@@ -1,4 +1,4 @@
-# Remove docker enviroment for development purpose
+# Remote docker enviroment for development purpose
 #
 # Build and run:
 #   docker build -t alpile-cpp:1.0 -f dev.Dockerfile .
@@ -6,7 +6,7 @@
 #   ssh-keygen -f "$HOME/.ssh/known_hosts" -R "[localhost]:2222"
 #
 # stop:
-#   docker stop clion_remote_env
+#   docker stop alpile-cpp
 #
 # ssh credentials (test user):
 #   root@root

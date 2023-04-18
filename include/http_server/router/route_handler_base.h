@@ -18,7 +18,7 @@ public:
   explicit route_handler_base(std::string baseUrl);
   virtual ~route_handler_base();
   bool match(std::string url);
-  void handle_request(http_request& req, http_response& res);
+  bool handle_request(http_request& req, http_response& res);
   virtual void http_get(http_request& req, http_response& res) = 0;
   virtual void http_post(http_request& req, http_response& res) = 0;
   virtual void http_put(http_request& req, http_response& res) = 0;

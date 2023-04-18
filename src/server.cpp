@@ -70,11 +70,15 @@ void server::start() {
 
 void server::routing_request(http_request& req, http_response& res) {
   auto handler = router_.get_route_handler(std::string(req.url_));
+  auto success = false;
+
   if (handler) {
-    handler->handle_request(req, res);
+    success = handler->handle_request(req, res);
+  }
+
+  if (success)
     res.send_hello();
-  } else
-    res.send_404();
+  res.send_404();
 }
 
 server& server::with(const std::string& path) {
