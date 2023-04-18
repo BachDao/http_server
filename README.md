@@ -45,6 +45,6 @@ used as a benchmarking tool
   Node-http module can handle 10k connection at speed around 37k req/s. Of-course Node is production server with many
   features supported, the number should be taken with grant of salt.
 
-- ![alt text] (https://github.com/BachDao/http_server/blob/main/resources/nodejs_test.png)
+![alt text](https://github.com/BachDao/http_server/blob/main/resources/nodejs_test.png)
 
-- ![alt text](https://github.com/BachDao/http_server/blob/main/resources/nodejs_ref_code.png)
+![alt text](https://github.com/BachDao/http_server/blob/main/resources/nodejs_ref_code.png)
